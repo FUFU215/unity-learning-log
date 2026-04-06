@@ -1,6 +1,7 @@
 # unity-learning-log
 2026.4.6
 【Unity学习进度】
+
 当前阶段：
 已完成：基础移动（Update + Translate + deltaTime）
 
@@ -31,7 +32,7 @@
 
 wsad控制2D小方块移动代码：
 
-```
+```csharp
 using UnityEngine;//引入unity工具库
 
 public class PlayerMove : MonoBehaviour //创建playermove类，继承monobehaviour类
