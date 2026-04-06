@@ -35,12 +35,10 @@ using UnityEngine; //引入unity工具库
 public class PlayerMove : MonoBehaviour //创建playermove类，继承monobehaviour类
 {
     public float speed = 5f; //定义速度为浮点数5
-
     void Update() //每一帧都会运行一次
     {
         float moveX = Input.GetAxis("Horizontal"); //定义x方向移动变量move，通过a，d改变movex的值
         float moveY = Input.GetAxis("Vertical");  //同上类似
-
         transform.Translate(new Vector3(moveX, moveY, 0) * speed * Time.deltaTime);  //让物体根据movex，movey进行移动
     }
 }
